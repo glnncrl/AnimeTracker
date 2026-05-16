@@ -11,8 +11,8 @@ A full stack **ASP.NET Core MVC** web application for tracking your anime collec
 - 🎨 Custom anime-themed dark UI
 
 ## Tech Stack
-- **Backend:** ASP.NET Core MVC (.NET 8)
-- **Database:** SQL Server + Entity Framework Core
+- **Backend:** ASP.NET Core MVC (.NET 10)
+- **Database:** SQL Server Management Studio 22 + Entity Framework Core
 - **Frontend:** Razor Views, Bootstrap 5, Custom CSS
 - **IDE:** Visual Studio 2022
 
