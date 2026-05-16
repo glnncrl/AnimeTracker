@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Hero -->
+<div style="position:relative; width:100%; height:500px; overflow:hidden;">
+    <img src="~/images/anime-bg.jpg" alt="Anime Banner"
+         style="width:100%; height:100%; object-fit:cover; object-position:center; filter:brightness(0.45);" />
+    <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(13,13,26,0.1) 0%, rgba(13,13,26,1) 100%);"></div>
+    <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; text-align:center; padding:0 20px;">
+        <div style="font-family:'Cinzel',serif; font-size:0.9rem; letter-spacing:6px; color:#c084fc; text-transform:uppercase;">Welcome to</div>
+        <div style="font-family:'Cinzel',serif; font-size:3.5rem; font-weight:700; color:#ffffff; text-shadow: 0 0 40px rgba(192,132,252,0.8), 0 2px 4px rgba(0,0,0,0.9); letter-spacing:4px; line-height:1.1;">
+            AnimeTracker
+        </div>
+        <div style="color:#d8b4fe; font-size:1.1rem; letter-spacing:2px; max-width:500px;">
+            Your personal sanctuary for tracking every anime you've ever loved.
+        </div>
+        <div style="display:flex; gap:16px; margin-top:12px;">
+            <a asp-controller="Anime" asp-action="Index" class="btn btn-primary" style="padding:12px 32px; font-size:1rem;">
+                🎌 My Collection
+            </a>
+            <a asp-controller="Anime" asp-action="Create" class="btn btn-secondary" style="padding:12px 32px; font-size:1rem;">
+                + Add Anime
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Features -->
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 style="font-family:'Cinzel',serif; color:#e9d5ff; letter-spacing:3px;">Everything you need</h2>
+        <p style="color:#a78bfa; letter-spacing:1px;">to manage your anime journey</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="anime-card text-center h-100">
+                <div style="font-size:3rem; margin-bottom:1rem;">📋</div>
+                <h5 style="font-family:'Cinzel',serif; color:#c084fc; margin-bottom:0.75rem;">Track</h5>
+                <p style="color:#a78bfa; font-size:0.95rem; line-height:1.7;">
+                    Keep a complete record of every anime — what you're watching, completed, or planning to watch next.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="anime-card text-center h-100">
+                <div style="font-size:3rem; margin-bottom:1rem;">⭐</div>
+                <h5 style="font-family:'Cinzel',serif; color:#c084fc; margin-bottom:0.75rem;">Rate</h5>
+                <p style="color:#a78bfa; font-size:0.95rem; line-height:1.7;">
+                    Score each anime from 1 to 10 and see your average rating across your entire collection.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="anime-card text-center h-100">
+                <div style="font-size:3rem; margin-bottom:1rem;">🔍</div>
+                <h5 style="font-family:'Cinzel',serif; color:#c084fc; margin-bottom:0.75rem;">Discover</h5>
+                <p style="color:#a78bfa; font-size:0.95rem; line-height:1.7;">
+                    Search, filter by status, and sort by rating or title to find exactly what you're looking for.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Anime Quote -->
+    <div class="text-center mt-5 py-4" style="border-top: 1px solid rgba(124,58,237,0.3);">
+        <p style="font-family:'Cinzel',serif; font-size:1.1rem; color:#e9d5ff; font-style:italic; letter-spacing:1px;">
+            "A dropout will beat a genius through hard work."
+        </p>
+        <p style="color:#7c3aed; font-size:0.85rem; letter-spacing:2px; margin-top:8px;">— Rock Lee, Naruto</p>
+    </div>
+</div>

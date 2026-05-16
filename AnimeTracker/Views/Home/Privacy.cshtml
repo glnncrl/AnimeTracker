@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Privacy";
+}
+
+<div class="container mt-4 mb-5" style="max-width:720px;">
+
+    <div class="text-center mb-5">
+        <h2 style="font-family:'Cinzel',serif; color:#e9d5ff; letter-spacing:3px;">🔒 Privacy Policy</h2>
+        <p style="color:#a78bfa; letter-spacing:1px; font-size:0.9rem;">Last updated: May 2026</p>
+    </div>
+
+    <div class="anime-card mb-4">
+        <h5 style="font-family:'Cinzel',serif; color:#c084fc; margin-bottom:1rem;">📦 Your Data Stays With You</h5>
+        <p style="color:#d8b4fe; line-height:1.8;">
+            AnimeTracker stores all your data locally on your own SQL Server database.
+            Nothing you enter — your anime titles, ratings, or notes — is ever sent to any
+            external server or third party. Your collection is entirely yours.
+        </p>
+    </div>
+
+    <div class="anime-card mb-4">
+        <h5 style="font-family:'Cinzel',serif; color:#c084fc; margin-bottom:1rem;">🌐 No Tracking, No Ads</h5>
+        <p style="color:#d8b4fe; line-height:1.8;">
+            This application does not use cookies for tracking, does not display advertisements,
+            and does not collect any personal information. There are no analytics tools or
+            third-party scripts monitoring your activity.
+        </p>
+    </div>
+
+    <div class="anime-card mb-4">
+        <h5 style="font-family:'Cinzel',serif; color:#c084fc; margin-bottom:1rem;">🗄️ Database Storage</h5>
+        <p style="color:#d8b4fe; line-height:1.8;">
+            Your anime collection data is stored in a local SQL Server database
+            (AnimeTrackerDB) running on your own machine. Only you have access to this data.
+            Uninstalling the application or dropping the database permanently removes all stored data.
+        </p>
+    </div>
+
+    <div class="anime-card mb-4">
+        <h5 style="font-family:'Cinzel',serif; color:#c084fc; margin-bottom:1rem;">✉️ Contact</h5>
+        <p style="color:#d8b4fe; line-height:1.8;">
+            This is a personal project built with ASP.NET Core MVC and SQL Server.
+            If you have any questions or concerns about how this application works,
+            feel free to review the source code or reach out to the developer directly.
+        </p>
+    </div>
+
+    <div class="text-center mt-4 mb-4">
+        <a asp-controller="Anime" asp-action="Index" class="btn btn-primary">🎌 Back to My Collection</a>
+    </div>
+
+    <!-- Credits -->
+    <div class="anime-card mt-4 text-center">
+        <div style="font-size:2.5rem; margin-bottom:1rem;">👨‍💻</div>
+        <h5 style="font-family:'Cinzel',serif; color:#c084fc; letter-spacing:2px; margin-bottom:0.25rem;">Created by</h5>
+        <h4 style="font-family:'Cinzel',serif; color:#ffffff; font-size:1.4rem; letter-spacing:3px; margin-bottom:0.5rem;">
+            Glenn Carlo Pabayo
+        </h4>
+        <p style="color:#a78bfa; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase; margin-bottom:1.5rem;">
+            Full Stack Developer
+        </p>
+
+        <div style="display:flex; flex-direction:column; gap:12px; align-items:center;">
+
+            <a href="https://github.com/glnncrl" target="_blank"
+               style="display:flex; align-items:center; gap:10px; color:#e9d5ff; text-decoration:none; background:rgba(255,255,255,0.05); border:1px solid rgba(124,58,237,0.3); border-radius:12px; padding:10px 24px; width:fit-content; transition:all 0.3s ease;"
+               onmouseover="this.style.background='rgba(124,58,237,0.2)'"
+               onmouseout="this.style.background='rgba(255,255,255,0.05)'">
+                <span style="font-size:1.2rem;">🐙</span>
+                <span style="font-size:0.95rem; letter-spacing:1px;">github.com/glnncrl</span>
+            </a>
+
+            <a href="https://www.instagram.com/glnncrl_pby/" target="_blank"
+               style="display:flex; align-items:center; gap:10px; color:#e9d5ff; text-decoration:none; background:rgba(255,255,255,0.05); border:1px solid rgba(124,58,237,0.3); border-radius:12px; padding:10px 24px; width:fit-content; transition:all 0.3s ease;"
+               onmouseover="this.style.background='rgba(124,58,237,0.2)'"
+               onmouseout="this.style.background='rgba(255,255,255,0.05)'">
+                <span style="font-size:1.2rem;">📸</span>
+                <span style="font-size:0.95rem; letter-spacing:1px;">@@glnncrl_pby</span>
+            </a>
+
+            <a href="mailto:glenn.pabayo@gmail.com"
+               style="display:flex; align-items:center; gap:10px; color:#e9d5ff; text-decoration:none; background:rgba(255,255,255,0.05); border:1px solid rgba(124,58,237,0.3); border-radius:12px; padding:10px 24px; width:fit-content; transition:all 0.3s ease;"
+               onmouseover="this.style.background='rgba(124,58,237,0.2)'"
+               onmouseout="this.style.background='rgba(255,255,255,0.05)'">
+                <span style="font-size:1.2rem;">✉️</span>
+                <span style="font-size:0.95rem; letter-spacing:1px;">glenn.pabayo@gmail.com</span>
+            </a>
+
+        </div>
+
+        <p style="color:#4c1d95; font-size:0.75rem; margin-top:1.5rem; letter-spacing:1px;">
+            Built with ASP.NET Core MVC · Entity Framework · SQL Server · Bootstrap
+        </p>
+    </div>
+
+</div>

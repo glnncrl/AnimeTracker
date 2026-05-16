@@ -1,0 +1,52 @@
+﻿@model AnimeTracker.Models.Anime
+
+@{
+    ViewData["Title"] = "Delete Anime";
+}
+
+<div class="container mt-4 mb-5" style="max-width: 580px;">
+
+    <div class="text-center mb-4">
+        <h2 style="font-family:'Cinzel',serif; color:#fca5a5; letter-spacing:2px;">🗑️ Delete Anime</h2>
+        <p style="color:#a78bfa; font-size:0.9rem; letter-spacing:1px;">This action cannot be undone</p>
+    </div>
+
+    <div class="alert alert-warning text-center">
+        Are you sure you want to remove <strong>@Model.Title</strong> from your collection?
+    </div>
+
+    <div class="anime-card">
+
+        <div class="d-flex justify-content-between align-items-center py-3" style="border-bottom: 1px solid rgba(124,58,237,0.2);">
+            <span style="color:#a78bfa; font-weight:700;">⚔️ Title</span>
+            <span style="color:#e9d5ff; font-weight:700;">@Model.Title</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center py-3" style="border-bottom: 1px solid rgba(124,58,237,0.2);">
+            <span style="color:#a78bfa; font-weight:700;">🎭 Genre</span>
+            <span style="color:#e9d5ff;">@(Model.Genre ?? "—")</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center py-3" style="border-bottom: 1px solid rgba(124,58,237,0.2);">
+            <span style="color:#a78bfa; font-weight:700;">📌 Status</span>
+            <span style="color:#e9d5ff;">@Model.Status</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center py-3">
+            <span style="color:#a78bfa; font-weight:700;">⭐ Rating</span>
+            <span style="color:#fbbf24;">
+                @(Model.Rating.HasValue ? $"⭐ {Model.Rating} / 10" : "—")
+            </span>
+        </div>
+
+    </div>
+
+    <form asp-action="Delete" class="mt-4">
+        <input type="hidden" asp-for="Id" />
+        <div class="d-flex gap-3">
+            <button type="submit" class="btn btn-danger flex-grow-1">🗑️ Yes, Delete</button>
+            <a asp-action="Index" class="btn btn-secondary flex-grow-1 text-center">← Keep It</a>
+        </div>
+    </form>
+
+</div>
